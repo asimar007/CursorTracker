@@ -14,7 +14,8 @@ body {
   place-items: center;
   height: 100vh;
   overflow-x: hidden;
-  font-weight: 300;
+  background-origin:content-box;
+  font-weight: 200;
 }
 
 a {
@@ -30,10 +31,11 @@ input {
 .tracker {
   position: fixed;
   transform: translate(-50%, -50%);
-  width: 40px;
-  z-index: 9999;
+  width: 30px;
+  z-index: 0;
   pointer-events: none;
-  transition: all .15s;
+  transition: all .30s;
+  transition-delay:var(-50%);
 }
 .tracker svg{
   width: 100%;
